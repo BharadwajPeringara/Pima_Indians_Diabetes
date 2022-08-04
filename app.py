@@ -41,7 +41,7 @@ def predict():
         return render_template('result.html', pred=f'You have chance of having diabetes.\n Probability of being a diabetic is {percentage}%')
     else:
         percentage = round(prediction[0][0], 4)*100
-        return render_template('result.html', pred=f'Congratulations!!, You are in safe.\n Probability of being diabetic is {percentage}%')
+        return render_template('result.html', pred=f'Congratulations!!🙂, You are in safe.\n Probability of being non-diabetic is {percentage}%')
     
 
 if __name__ == '__main__':
