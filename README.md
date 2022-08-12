@@ -29,3 +29,36 @@ Dataset details
 8: Age: Age (years)
 
 9: Outcome: Class variable (0 or 1) 268 of 768 are 1, the others are 0
+
+
+=====================================================================================
+=====================================================================================
+
+
+                                             Approach 
+
+====================================================================================
+
+Data Exploration: 
+
+1) The target variable is "Outcome".
+
+2) There are nine categorical columns , which are in the numeric format.
+
+3) The correlation of 'Outcome' with other columns are normal correlated. SO we cannot drop any of the columns form the data.
+
+4) There are may zeroes appeared in most of the columns which has to beb replaced.
+
+Feature Engineering:
+
+1) First of all changed the zero values present in the column 'Glucose', 'Insulin', 'BMI', 'BloodPressure', 'SkinThickness'. Replaced them using median() on all of them.
+
+2) The presence of outliers are high in the continuous columns. So, by standard deviation thr upper and lower limits were handled.
+
+Building of the models:
+
+
+
+Final Submission: 
+
+
